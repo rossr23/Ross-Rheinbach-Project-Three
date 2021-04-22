@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif,'New Tegomin', serif;
+}
+
+/* html {
+  width: 100%;
+  font-size: 20px;
+  font-family: 'roboto', serif;
+  background-color: rgba(247, 247, 247, 0.3);
+} */
+
+header {
+  background-color: #2d3945;
+  color:white;
+  padding:5px 10px 5px 10px;
+  line-height: normal;
+  text-align:center;
+}
+
+h1{
+  font-family: 'New Tegomin';
+  Font-size: 1.75rem;
+}
+
+/* #intro{
+  -ms-flex-align: center;
+  border-bottom: black;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-style: double;
+  align-content: center;
+  margin: 0px ;
+} */
+
+#intro h2{
+  font-size:1.4em;
+  font-family: 'sans-serif';
+  color: rgb(99, 99, 99);
+  text-align:center;
+}
+
+#intro p{
+  font-size:1em;
+  font-family: 'sans-serif';
+  text-align:center;
+  color:lightgray;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: lightslategray;
+}
+
+p{
+  font-family: 'new-tegomin';
+  color: rgb(187, 187, 187);
+}
+
+legend{
+  font-family: 'new-tegomin' ;
+  color: rgb(129, 129, 129);
+}
+body{
+  margin: 0px;
+  font-family: 'new tegomin' 'sans-serif';
+}
+
+form{
+  display: block;
+  min-width:90vw;
+  border: none;
+  text-align: left;
+  align-content: left;
+}
+
+#zip{
+  max-width: 60vw;
+}
+
+input, select{
+ width:90vw;
+ min-height:40px;
+ padding:10px 5px 10px 5px;
+ margin:2px 5px 2px 5px;
+ background-color:rgba(211, 211, 211, 0.507);
+ Border-radius:5px;
+ border:none;
+}
+
+label{
+width:100%;
+padding: 10px 5px 10px 5px;
+line-height:1.8em;
+font-size: 0.9em;
+color:rgb(129, 129, 129);
+font-family: 'new-tegomin','sans-serif';
+ }
+
+fieldset{
+  border:none;
+  text-align: left;
+}
+
+#bottom-break{
+  width: 90%;  
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: black;
+
+  }
+
+#hr-a  
+{  
+width: 90%;  
+height: 1px;  
+background-color: black;
+margin-bottom: 1px;  
+margin-right: auto;  
+margin-left: auto;  
+margin-top: 9px;  
+} 
+
+#hr-b  
+{  
+width: 90%;  
+height: 2px;  
+background-color: black;
+margin-bottom: 20px;  
+margin-right: auto;  
+margin-left: auto;  
+margin-top: 1px;  
+} 
+
+
+#name, #email{
+  text-align:right;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+input[type=text]:focus {
+  border: 3px solid lightslategray;
+}
+
+input[type=checkbox],input[type=radio]{
+  display: inline-block;
+  width:auto;
+  margin:10px 5px 10px 5px;
+}
+
+#check{
+  display: inline-block;
+}
+
+textarea{
+  background-color: rgb(218, 218, 218);
+  border: none;
+  min-width:90vw;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  margin-bottom:15px;
+}
+button{
+  background-color: darkcyan;
+  color:white;
+  border: none;
+  min-width:90vw;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+
+}
+
+footer{
+  text-align: center;
+  font-size:0.8em;
+  font-style: italic;
+  color: rgb(187, 187, 187); 
+  
+
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (min-width:768px) {
+  form{
+    display: block;
+    min-width:60vw;
+    max-width: 65vw;
+    border: none;
+    text-align: left;
+    align-content: center;
+  }
+  input, select{
+    width: 60vw;
+    min-height:40px;
+    padding:10px 5px 10px 5px;
+    margin-left: 20vw;
+    margin-right:20vw;
+    background-color:rgba(211, 211, 211, 0.507);
+    Border-radius:5px;
+    border:none;
+   }
+   textarea{
+    background-color: rgb(218, 218, 218);
+    border: none;
+    min-width:60vw;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom:15px;
+    margin-left: 20vw;
+    margin-right:20vw;
+  }
+  button{
+    background-color: darkcyan;
+    color:white;
+    border: none;
+    min-width:60vw;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-left: 20vw;
+    margin-right:20vw;
+}
+#check, #radio{
+  display: inline-block;
+  margin-left: 20vw;
+  margin-right:20vw;
+}
+}
