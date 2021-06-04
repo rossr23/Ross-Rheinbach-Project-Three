@@ -30,32 +30,27 @@
           <legend>Contact Information</legend>
         <div>
           <label for="name">Full Name</label>
-          <br>
           <input type="text" id="name" name="user-name" placeholder="required">
         </div>
         <div>
           <label for="email">Email Address</label>
-          <br>
           <input type="text" id="email" name="user-email" placeholder="required">
         </div>
         <div>
           <label for="phone">Phone Number</label>
-          <br>
-          <input type="text" id="phone" name="user-phone">
+          <input type="tel" id="phone" name="user-phone">
         </div>  
         <div>
           <label for="address">Street Address</label>
-          <br>
           <input type="text" id="address" name="user-address">
         </div> 
         <div>
           <label for="city">City</label>
-          <br>
           <input type="text" id="city" name="user-city">
         </div>  
         <div>
           <label for="state">State</label>
-          <br>
+
           <select id="state" name="user-state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -113,7 +108,6 @@
         </div>
         <div>
           <label for="zip">Zip Code</label>
-          <br>
           <input type="text" id="zip" name="user-zip">
         </div>
         </fieldset>
@@ -140,18 +134,18 @@
     <div id="radio">
         <P>Newsletter Format</P>
         <div>
-        <input type="radio" id="plain_text" name="text_format">
+        <input type="radio" id="plain_text" name="format">
         <label for="plain_text">Plain Text</label>
         </div>
       <div>
-        <input type="radio" id="format_html" name="html_format">
+        <input type="radio" id="format_html" name="format">
         <label for="format_html">HTML</label>
       </div> 
     </div>
       </fieldset>
       
       <fieldset>
-        <p>Other Topics you'd like to hear about</p>
+        <label for="other">Other Topics you'd like to hear about</label>
 
         <textarea id="other" name="user_other"></textarea>
 

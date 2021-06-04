@@ -74,7 +74,7 @@ form{
 }
 
 #zip{
-  max-width: 60vw;
+ margin-right: 30vw;
 }
 
 input, select{
@@ -195,15 +195,23 @@ footer{
 
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width:768px) {
+  body{
+    display: inline-block;
+  }
+
   fieldset{
-    display:inline-flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    max-width: 60vw;
+    display:inline-block;
     margin-left: 20vw;
     margin-right: 20vw;
     padding:0px 0px 0px 0px;
 }
+input[type=text],input[type=tel], select{
+  display: inline-block;
+  width: 40vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
 #intro, #hr-a, #hr-b, #bottom-break{
     max-width: 60vw;
     margin-left: 20vw;
@@ -236,5 +244,9 @@ input[type=checkbox],input[type=radio]{
 
   fieldset{
     display:block;
+  }
+  #zip{
+    max-width: 20vw;
+    margin-top: 10px;
   }
 }
