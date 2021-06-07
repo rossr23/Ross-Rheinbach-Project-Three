@@ -67,14 +67,20 @@ body{
 }
 
 form{
-  display: block;
   min-width:90vw;
   border: none;
   text-align: left;
 }
 
-#zip{
- margin-right: 30vw;
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.zip{
+  max-width: 60vw ;
+  display: flex;
+  flex-direction: column;
 }
 
 input, select{
@@ -195,58 +201,32 @@ footer{
 
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width:768px) {
-  body{
-    display: inline-block;
-  }
 
-  fieldset{
-    display:inline-block;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding:0px 0px 0px 0px;
-}
-input[type=text],input[type=tel], select{
-  display: inline-block;
-  width: 40vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
-}
+  .top-form input,
+  .top-form select{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: row;
+    max-width: 50vw;
+  
+  } 
+  .top-form label
+   {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+  }
+/* 
+  #all{
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width:60vw;
+  } */
+
 
 #intro, #hr-a, #hr-b, #bottom-break{
     max-width: 60vw;
     margin-left: 20vw;
     margin-right: 20vw;
 }
-input, select{
-    max-width:60vw;
-}
-button, textarea{
-  max-width: 60vw;
-  min-width: 60vw;
-}
-input[type=checkbox],input[type=radio]{
-    display: inline-block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:20px;
-    height: auto;
-    margin:0px 5px 0px 5px;
-  } 
-  
-  #check > div,
-  #radio > div {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  vertical-align: middle;
-  text-align: left;
-  } 
-
-  fieldset{
-    display:block;
-  }
-  #zip{
-    max-width: 20vw;
-    margin-top: 10px;
-  }
 }
