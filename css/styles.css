@@ -78,7 +78,7 @@ form{
 }
 
 .zip{
-  max-width: 60vw ;
+  max-width: 40vw ;
   display: flex;
   flex-direction: column;
 }
@@ -202,12 +202,30 @@ footer{
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width:768px) {
 
-  .top-form input,
+  #zip{
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: 40%;
+    max-width: 40vw;
+    max-height: 40px;
+    text-align:left;
+  
+  }
+
+  .top-form {
+    display: flex;  
+    flex-direction: row;
+    max-width: 60vw;
+    margin:auto;
+  }
+
+  .top-form input:not(#zip),
   .top-form select{
     flex-basis: 75%;
-    display: flex;
-    flex-direction: row;
     max-width: 50vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
   
   } 
   .top-form label
@@ -215,18 +233,31 @@ footer{
     flex-basis: 25%;
     display: flex;
     flex-direction: row;
-  }
-/* 
-  #all{
-    margin-left: 100px;
-    margin-right: 100px;
-    max-width:60vw;
-  } */
-
-
-#intro, #hr-a, #hr-b, #bottom-break{
     max-width: 60vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin:auto;
+  }
+  
+
+#intro, #hr-a, #hr-b, #bottom-break, #bottom{
+    max-width: 60vw;
+    margin:auto;
+  
 }
+#signup{
+  display: flex;  
+  flex-direction: column;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  max-width: 60vw;
+}
+textarea,
+button{
+  max-width: 60vw;
+  min-width: 50vw;
+}
+
+#bottom{
+  margin-top:15px;
+}
+
 }
